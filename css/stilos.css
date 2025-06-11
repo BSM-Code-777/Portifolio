@@ -12,12 +12,24 @@
 .caixa-principal {
     height: 100vh;
     width: 100%;
-    background-color: rgb(33, 29, 29);
-    background-image: url(img/programador-removebg-preview.png);
+    background-color: #191919;
     background-repeat: no-repeat;
     background-size: 500px;
-    background-position: center right 200px;
 
+}
+
+#caixa-principal-img {
+
+    position: relative;
+    height: 500px;
+}
+
+#caixa-dentro-img {
+    position: absolute;
+    top: 200px;
+    right: 150px;
+    width: 700px;
+    height: auto;
 }
 
 nav {
@@ -27,6 +39,7 @@ nav {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 25px;
+   
 }
 
 .portifolio {
@@ -34,14 +47,16 @@ nav {
     font-size: 60px;
 }
 
-a {
+nav ul li a {
     color: white;
-
+    font-size: 1.3em;
+   
 }
 
-a:hover {
+nav ul li a:hover {
     color: #f9004d;
-    transition: 0.5s;
+    font-size: 1.5em;
+    transition: 0.9s ease;
 }
 
 .portifolio span {
@@ -71,7 +86,7 @@ li:hover {
 
 h1 {
     color: white;
-    font-size: 7em;
+    font-size: 10em;
 }
 
 h1 span {
@@ -165,10 +180,10 @@ section div p {
     border-radius: 20px;
     padding: 20px 35px;
     text-align: center;
-    
+
 }
 
-#ref{
+#ref {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -264,4 +279,3 @@ footer p {
     transform: scale(1.3);
     transition: 0.5s;
 }
-
